@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-27 14:59:31.613447",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "header",
+  "enabled_name",
+  "token",
+  "webhook_url",
+  "column_break_dcdj7",
+  "user_guide"
+ ],
+ "fields": [
+  {
+   "fieldname": "token",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Token",
+   "reqd": 1
+  },
+  {
+   "fieldname": "webhook_url",
+   "fieldtype": "Data",
+   "label": "Webhook Call Activity Url",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "enabled_name",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  },
+  {
+   "fieldname": "column_break_dcdj7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "user_guide",
+   "fieldtype": "HTML",
+   "label": "User Guide",
+   "options": "<style>\na{\n  color: blue;\n  text-align: center;\n  text-decoration: none;\n  display: inline-block;\n}\n</style>\n<div class=\"csh-article-content-text csh-article-content-text-large\" role=\"article\">Setup Guide: <a class=\"csh-markdown csh-markdown-link csh-markdown-link-text\" href=\"https://help.onehash.ai/en/article/callhippo-integration-xy69qm/\" rel=\"noopener noreferrer\" role=\"link\" target=\"_blank\">OneHash CRM | Integration</a><br class=\"csh-new-line\"><br class=\"csh-new-line\"><br class=\"csh-new-line\"><br class=\"csh-new-line\"><h3 class=\"csh-markdown csh-markdown-title csh-font-sans-semibold\" data-type=\"###\" id=\"3-prerequisites\">Prerequisites</h3><span class=\"csh-markdown csh-markdown-list\" data-type=\"1\">Add <a class=\"csh-markdown csh-markdown-link csh-markdown-link-text\" href=\"https://chrome.google.com/webstore/detail/callhippo-virtual-phone-s/gbiddodjfedcfaomleolekbgkidagkci\" rel=\"noopener noreferrer\" role=\"link\" target=\"_blank\">CallHippo Extension</a> to Google Chrome and enable the extension.</span><br class=\"csh-new-line\"><br class=\"csh-new-line\"><h3 class=\"csh-markdown csh-markdown-title csh-font-sans-semibold\" data-type=\"###\" id=\"3-steps-to-integrate-with-callhippo\">Steps to integrate with CallHippo</h3><span class=\"csh-markdown csh-markdown-list\" data-type=\"2\">1. Sign in to CallHippo and go to <span class=\"csh-markdown csh-markdown-bold csh-font-sans-medium\">Integrations&gt;Rest API</span>, and generate <span class=\"csh-markdown csh-markdown-bold csh-font-sans-medium\">Unique Api Token</span>. Also, toggle the <span class=\"csh-markdown csh-markdown-bold csh-font-sans-medium\">Enable Telephony API</span> button.</span><br class=\"csh-new-line\"><br class=\"csh-new-line\"><br class=\"csh-new-line\"><span class=\"csh-markdown csh-markdown-image\"></span><span class=\"csh-markdown csh-markdown-list\" data-type=\"3\">2. Copy the above token and save it in the <span class=\"csh-markdown csh-markdown-bold csh-font-sans-medium\">CallHippo Settings</span> at OneHash. Now, copy the <span class=\"csh-markdown csh-markdown-bold csh-font-sans-medium\">Webhook Call Activity Url</span> given below the token at OneHash.</span><br class=\"csh-new-line\"><br class=\"csh-new-line\"><br class=\"csh-new-line\"><span class=\"csh-markdown csh-markdown-image\"></span><span class=\"csh-markdown csh-markdown-list\" data-type=\"4\">3. Go back to  <span class=\"csh-markdown csh-markdown-bold csh-font-sans-medium\">Integrations&gt;Rest API</span> and click on <span class=\"csh-markdown csh-markdown-bold csh-font-sans-medium\">Webhook&gt;Connect</span> button. Enable <span class=\"csh-markdown csh-markdown-bold csh-font-sans-medium\">Calling Activity</span>, and paste the URL copied in the above step. Now, click on the <span class=\"csh-markdown csh-markdown-bold csh-font-sans-medium\">Save</span> button. On saving the correct URL, you will receive the message <span class=\"csh-markdown csh-markdown-bold csh-font-sans-medium\">URL has been added successfully</span>.</span><span class=\"csh-markdown csh-markdown-line csh-article-content-separate csh-article-content-separate-bottom\"></span></div>\n<br><br>"
+  },
+  {
+   "fieldname": "header",
+   "fieldtype": "HTML",
+   "label": "Header",
+   "options": "<img src=\"https://d1x9dsge91xf6g.cloudfront.net/callhippo/images/logo-2.svg\"><br class=\"csh-new-line\"><br class=\"csh-new-line\">OneHash lets you use the calling feature of CallHippo.\n<br><br>"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-12-12 11:15:13.713384",
+ "modified_by": "Administrator",
+ "module": "Callhippo",
+ "name": "CallHippo Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

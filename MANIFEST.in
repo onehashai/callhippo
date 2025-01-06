@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include callhippo *.css
+recursive-include callhippo *.csv
+recursive-include callhippo *.html
+recursive-include callhippo *.ico
+recursive-include callhippo *.js
+recursive-include callhippo *.json
+recursive-include callhippo *.md
+recursive-include callhippo *.png
+recursive-include callhippo *.py
+recursive-include callhippo *.svg
+recursive-include callhippo *.txt
+recursive-exclude callhippo *.pyc
