@@ -5,21 +5,12 @@ from frappe.model.document import Document
 import pytz
 import frappe
 import frappe.utils
-import hashlib
-import hmac
 import json
-import requests
-import base64
 from datetime import datetime
-from frappe.core.doctype.communication.email import make
-from werkzeug.wrappers import Response
-from frappe.integrations.utils import make_get_request, make_post_request, create_request_log
-
 
 class CallHippoCallLogs(Document):
 	pass
 
-# Fetch All Call Logs of CallHippo
 @frappe.whitelist(allow_guest=True)
 def add_callhippo_logs():
 	raw_data = frappe.request.get_data(as_text=True)
@@ -55,7 +46,6 @@ def add_callhippo_logs():
 		}
 		frappe.get_doc(data).insert(ignore_permissions=True)
 
-# Saving CallHippo time to onehash time
 @frappe.whitelist(allow_guest=True)
 def format_callhippo_to_onehash_date(start_time):
 
